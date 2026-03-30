@@ -7,6 +7,9 @@ import Experience from "@/components/Experience";
 import TechStack from "@/components/TechStack";
 import BusinessModel from "@/components/BusinessModel";
 import Markets from "@/components/Markets";
+import Pipeline from "@/components/Pipeline";
+import Stats from "@/components/Stats";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 
@@ -23,6 +26,9 @@ export default function Home() {
         <TechStack />
         <BusinessModel />
         <Markets />
+        <Pipeline />
+        <Stats />
+        <Contact />
       </main>
       <Footer />
     </SmoothScroll>

@@ -33,7 +33,7 @@ export default function Markets() {
   const x = useTransform(scrollYProgress, [0.05, 0.95], ["0%", "-75%"]);
 
   return (
-    <section ref={ref} id="markets" className="relative h-[250vh]" style={{ position: "relative" }}>
+    <section ref={ref} id="markets" className="relative h-[200vh]" style={{ position: "relative" }}>
       {/* Sticky container */}
       <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full mb-10">
