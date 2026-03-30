@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
+import SplitFlapText from "./SplitFlapText";
 
 const AttractorParticles = dynamic(() => import("./AttractorParticles"), {
   ssr: false,
@@ -92,9 +93,9 @@ export default function BusinessModel() {
           <p className="text-[11px] font-mono tracking-[0.35em] uppercase text-[#CDFF00] mb-4">
             B2B Revenue Model
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05] max-w-[640px]">
+          <SplitFlapText className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05] max-w-[640px]">
             How it makes money.
-          </h2>
+          </SplitFlapText>
           <p className="text-white/40 mt-5 text-base md:text-lg max-w-[520px] leading-relaxed">
             Every company building autonomous systems hits the same
             deployment wall. SimReal would be the infrastructure they pay

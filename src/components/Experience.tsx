@@ -7,6 +7,7 @@ import * as THREE from "three";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import SplitFlapText from "./SplitFlapText";
 
 /* ── 3D Scene ─────────────────────────────────────────────── */
 
@@ -212,9 +213,9 @@ export default function Experience() {
         <p className="text-[11px] font-mono tracking-[0.35em] uppercase text-[#CDFF00] mb-4">
           The Concept
         </p>
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05] max-w-[640px]">
+        <SplitFlapText className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05] max-w-[640px]">
           How it would work.
-        </h2>
+        </SplitFlapText>
         <p className="text-white/40 mt-5 text-base md:text-lg max-w-[540px] leading-relaxed">
           Autonomy teams spend most of their engineering hours on deployment
           tooling instead of building intelligence. SimReal is the idea of

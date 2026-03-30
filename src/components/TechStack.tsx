@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import dynamic from "next/dynamic";
+import SplitFlapText from "./SplitFlapText";
 
 const ReflectionScene = dynamic(() => import("./ReflectionScene"), {
   ssr: false,
@@ -141,9 +142,9 @@ export default function TechStack() {
           <p className="text-[11px] font-mono tracking-[0.35em] uppercase text-[#CDFF00] mb-4">
             Technical Approach
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05] max-w-[640px]">
+          <SplitFlapText className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05] max-w-[640px]">
             Built on the NVIDIA autonomy stack.
-          </h2>
+          </SplitFlapText>
           <p className="text-white/40 mt-5 text-base md:text-lg max-w-[520px] leading-relaxed">
             SimReal would not reinvent the wheel. It sits on top of
             Omniverse, Isaac Sim, TensorRT, and ROS 2 as the missing

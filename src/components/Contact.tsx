@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import SplitFlapText from "./SplitFlapText";
 
 export default function Contact() {
   const ref = useRef(null);
@@ -10,16 +11,10 @@ export default function Contact() {
   return (
     <section ref={ref} id="contact" className="py-40 md:py-56">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+        <SplitFlapText
           className="text-5xl md:text-[6rem] lg:text-[8rem] font-bold tracking-tighter leading-[0.88]"
-        >
-          Let&apos;s build
-          <br />
-          <span className="text-[#CDFF00]">this together.</span>
-        </motion.h2>
+          accentClass="text-[#CDFF00]"
+        >{"Let's build\nthis together."}</SplitFlapText>
 
         <motion.p
           initial={{ opacity: 0 }}

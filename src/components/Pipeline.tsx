@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import SplitFlapText from "./SplitFlapText";
 
 const steps = [
   {
@@ -78,9 +79,9 @@ export default function Pipeline() {
         <p className="text-[11px] font-mono tracking-[0.35em] uppercase text-[#CDFF00] mb-4">
           How It Works
         </p>
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 max-w-[560px] tracking-tight leading-[1.05]">
+        <SplitFlapText className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 max-w-[560px] tracking-tight leading-[1.05]">
           Four steps from trained model to deployed system.
-        </h2>
+        </SplitFlapText>
 
         <div className="space-y-6 md:space-y-8">
           {steps.map((step) => (

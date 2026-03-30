@@ -3,6 +3,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import SplitFlapText from "./SplitFlapText";
 
 const markets = [
   {
@@ -40,11 +41,7 @@ export default function Markets() {
           <p className="text-[11px] font-mono tracking-[0.35em] uppercase text-[#CDFF00] mb-4">
             Where This Applies
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05]">
-            Any industry deploying
-            <br />
-            autonomous systems.
-          </h2>
+          <SplitFlapText className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.05]">{"Any industry deploying\nautonomous systems."}</SplitFlapText>
         </div>
 
         {/* Horizontal scroll track */}
